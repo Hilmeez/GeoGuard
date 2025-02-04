@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#CB9D3840"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Welcome Text (OUTSIDE CARD) -->
+
+            <!-- New Motivational Text (OUTSIDE CARD) -->
+
+            <!-- CardView to Hold Content -->
+
+            <TextView
+                android:id="@+id/tvWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Welcome, User!"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.128"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvGuardNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="Stay Safe &amp; Alert!"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardViewInfo"
+                app:layout_constraintVertical_bias="0.19" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewInfo"
+                android:layout_width="321dp"
+                android:layout_height="401dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="60dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvWelcome">
+
+                <!-- Inside CardView: Content Layout -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp">
+
+                    <!-- GIF Image -->
+                    <ImageView
+                        android:id="@+id/imgGuardGif"
+                        android:layout_width="227dp"
+                        android:layout_height="252dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!-- "Guard Yourself" Text -->
+                    <TextView
+                        android:id="@+id/tvGuardYourself"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Guard Yourself"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imgGuardGif" />
+
+                    <!-- Open Map Button -->
+                    <Button
+                        android:id="@+id/btnOpenMap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Guard Now"
+                        app:icon="@drawable/baseline_medical_services_24"
+                        app:iconSize="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvGuardYourself" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/main_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

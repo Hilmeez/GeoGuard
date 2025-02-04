@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GeoGuard" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">#CB9D3840</item>
+
+        <!-- Primary colors (for consistency across activities) -->
+        <item name="colorPrimary">#CB9D3840</item>
+        <item name="colorPrimaryVariant">#CB9D3840</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <!-- Navigation bar color -->
+        <item name="android:navigationBarColor">#CB9D3840</item>
+
+        <!-- Toolbar text color -->
+        <item name="android:textColorPrimary">#FFFFFF</item>
+    </style>
+
+    <style name="Theme.GeoGuard" parent="Base.Theme.GeoGuard" />
+</resources>

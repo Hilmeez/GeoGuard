@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "729770232151",
+    "project_id": "geoguard-f9bd8",
+    "storage_bucket": "geoguard-f9bd8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:729770232151:android:09d69105b7bb7b54461612",
+        "android_client_info": {
+          "package_name": "com.example.geoguard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCz3OKYiF-759hVF7e6Ew0GeofWeQC3nr0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
