@@ -73,8 +73,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         hospitalList.add(new Hospital("MEDIKLINIK RAKYAT DR NAIM"+"\n"+"AHMAD ARAU 16 JAM",
                 new LatLng(6.4291529115271375, 100.27087133372642),
-                "NO. 21, TINGKAT BAWAH, " +"\n"+
-                        "JALAN MEDAN ARAU JAYA, "+"\n"+"MEDAN ARAU JAYA,"+"\n"+"02600 Arau, Perlis",
+                "NO. 21, TINGKAT BAWAH," +"\n"+
+                        "JALAN MEDAN ARAU JAYA,"+"\n"+"MEDAN ARAU JAYA,"+"\n"+"02600 Arau, Perlis",
                 "Open: 16 Hours",
                 R.drawable.mediklinikrakyat));
 
@@ -94,16 +94,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         hospitalList.add(new Hospital("Poliklinik DrAzhar Dan"+"\n"+"Rakan-rakan Caw Jejawi",
                 new LatLng(6.445067745332194, 100.23589099622707),
                 "no 3, kompleks perniagaan utara," +"\n"+
-                        " persiaran utara,"+"\n"+
+                        "persiaran utara,"+"\n"+
                         "Kampung Jejawi, 02500 Arau, Perlis",
                 " Open: 12am–6am, 9pm-12am",
                 R.drawable.azharjawi));
 
         hospitalList.add(new Hospital("Klinik Megah ",
                 new LatLng(6.44511038944594, 100.23535455443469),
-                "No 21, Persiaraan Jejawi Utara, " +"\n"+
+                "No 21, Persiaraan Jejawi Utara," +"\n"+
                         "Kompleks Perniagaan Utara," +"\n"+
-                        " 02600 Arau, Perlis",
+                        "02600 Arau, Perlis",
                 " Open: 9.30am–10:00pm"+"\n"+"Closed: Saturday",
                 R.drawable.megah));
 

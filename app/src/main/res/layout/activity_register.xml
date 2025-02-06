@@ -21,11 +21,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-        <ProgressBar
+       <!-- <ProgressBar
             android:id="@+id/progressBar"
             android:visibility="gone"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"/>-->
 
 
         <!-- SafeTrack Text -->
@@ -65,10 +65,10 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="676dp"
-            android:layout_marginEnd="0dp"
-            android:layout_marginBottom="36dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="683dp"
+            android:layout_marginEnd="-1dp"
+            android:layout_marginBottom="29dp"
             android:gravity="center"
             android:text="Copyright &#169; 2025 GeoGuard" />
 
@@ -76,8 +76,8 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewLogin"
-        android:layout_width="382dp"
-        android:layout_height="479dp"
+        android:layout_width="380dp"
+        android:layout_height="496dp"
         android:layout_marginHorizontal="80dp"
         android:layout_marginTop="100dp"
         app:cardBackgroundColor="@color/white"
@@ -91,7 +91,7 @@
         <!-- ConstraintLayout inside CardView for content -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="464dp"
+            android:layout_height="484dp"
             android:layout_marginTop="10dp"
             android:padding="20dp">
 
@@ -119,11 +119,11 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="116dp"
-                android:textColor="@color/black"
                 android:background="@android:drawable/edit_text"
                 android:hint="Email"
                 android:inputType="textEmailAddress"
                 android:padding="10dp"
+                android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -134,11 +134,11 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="52dp"
-                android:textColor="@color/black"
                 android:background="@android:drawable/edit_text"
                 android:hint="Name"
                 android:inputType="textEmailAddress"
                 android:padding="10dp"
+                android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -149,11 +149,11 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:textColor="@color/black"
                 android:background="@android:drawable/edit_text"
                 android:hint="Password"
                 android:inputType="textPassword"
                 android:padding="10dp"
+                android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -186,6 +186,19 @@
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/etPass" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btLogin1"
+                app:layout_constraintVertical_bias="1.0" />
+
 
             <!-- Fixed Margin Issue -->
 
